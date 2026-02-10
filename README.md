@@ -234,48 +234,7 @@ Fintrax/
 - Customize app appearance
 - Privacy and security settings
 
-## 🧪 Testing
 
-### Test Structure
-
-```
-app/src/
-├── test/                              # Unit tests
-│   └── java/com/example/fintrax/
-│       ├── domain/                    # Domain layer tests
-│       ├── data/                      # Data layer tests
-│       └── presentation/              # Presentation layer tests
-└── androidTest/                       # Instrumented tests
-    └── java/com/example/fintrax/
-        ├── ui/                        # UI tests
-        └── database/                  # Database tests
-```
-
-### Running Tests
-
-```bash
-# Run unit tests
-./gradlew test
-
-# Run instrumented tests
-./gradlew connectedAndroidTest
-
-# Run specific test class
-./gradlew test --tests "com.example.fintrax.domain.usecase.*"
-
-# Generate test coverage report
-./gradlew jacocoTestReport
-```
-
-### Test Coverage
-
-- **Domain Layer**: 90%+ coverage target
-- **Data Layer**: 85%+ coverage target
-- **Presentation Layer**: 70%+ coverage target
-
-## 🤝 Contributing
-
-We welcome contributions from the community! Please follow these guidelines:
 
 ### Development Workflow
 

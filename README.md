@@ -48,14 +48,6 @@ Fintrax es una aplicación integral de gestión financiera personal diseñada pa
 - ✅ **Gestión de Categorías**: Organizar transacciones por categorías personalizables
 - ✅ **Informes Financieros**: Generar informes detallados con gráficos y tendencias
 
-### Características Avanzadas
-- 🚧 **Análisis de Gastos**: Análisis de patrones de gasto potenciado por IA
-- 🚧 **Planificación de Presupuestos**: Establecer y monitorear límites de presupuesto
-- 🚧 **Establecimiento de Metas**: Definir y monitorear objetivos financieros
-- 🚧 **Exportación de Datos**: Exportar datos financieros en múltiples formatos (CSV, PDF)
-- 🚧 **Sincronización en la Nube**: Respaldo opcional y sincronización en la nube
-- 🚧 **Soporte Multi-divisa**: Soporte para múltiples monedas
-
 ### Características de UI/UX
 - 🎨 **Material Design 3**: UI moderna y adaptativa siguiendo las guías de Material Design 3
 - 🌙 **Modo Oscuro**: Cambio automático de tema claro/oscuro
@@ -164,146 +156,102 @@ Fintrax/
 └── README.md
 ```
 
-## 🚀 Installation
+## 🚀 Instalación
 
-### Prerequisites
-- **Android Studio**: Arctic Fox or later
-- **Android SDK**: API 26 (Android 8.0) minimum
-- **Kotlin**: 2.0.21 or later
-- **Gradle**: 8.0 or later
+### Prerrequisitos
+- **Android Studio**: Arctic Fox o superior
+- **Android SDK**: API 26 (Android 8.0) mínimo
+- **Kotlin**: 2.0.21 o superior
+- **Gradle**: 8.0 o superior
 
-### Setup Instructions
+### Instrucciones de Configuración
 
-1. **Clone the repository**
+1. **Clonar el repositorio**
    ```bash
    git clone https://github.com/your-username/fintrax.git
    cd fintrax
    ```
 
-2. **Open in Android Studio**
-   - Open Android Studio
-   - Select "Open an existing project"
-   - Navigate to the cloned repository directory
+2. **Abrir en Android Studio**
+   - Abrir Android Studio
+   - Seleccionar "Open an existing project"
+   - Navegar al directorio del repositorio clonado
 
-3. **Sync Gradle**
-   - Android Studio will automatically prompt to sync the project
-   - Wait for Gradle sync to complete
+3. **Sincronizar Gradle**
+   - Android Studio solicitará automáticamente sincronizar el proyecto
+   - Esperar a que se complete la sincronización de Gradle
 
-4. **Run the application**
-   - Select an emulator or physical device
-   - Click the "Run" button (▶️) or press `Ctrl+R`
+4. **Ejecutar la aplicación**
+   - Seleccionar un emulador o dispositivo físico
+   - Hacer clic en el botón "Run" o presionar `Ctrl+R`
 
-### Build Variants
+### Variantes de Build
 
-- **debug**: Development build with debugging enabled
-- **release**: Production build with optimizations
+- **debug**: Build de desarrollo con depuración habilitada
+- **release**: Build de producción con optimizaciones
 
-## 📖 Usage
+## 📖 Uso
 
-### Getting Started
+### Primeros Pasos
 
-1. **Launch the App**: Open Fintrax on your Android device
-2. **Dashboard**: View your financial overview on the main dashboard
-3. **Add Transactions**: Start recording income and expenses
-4. **Set Monthly Expenses**: Configure recurring monthly expenses
-5. **View Reports**: Analyze your financial patterns
+1. **Iniciar la App**: Abrir Fintrax en tu dispositivo Android
+2. **Panel Principal**: Ver tu resumen financiero en el panel principal
+3. **Agregar Transacciones**: Comenzar a registrar ingresos y gastos
+4. **Configurar Gastos Mensuales**: Configurar gastos mensuales recurrentes
+5. **Ver Informes**: Analizar tus patrones financieros
 
-### Main Features
+### Características Principales
 
-#### Dashboard
-- View current balance and monthly summary
-- Quick access to all main features
-- Recent transactions overview
-- Monthly expenses preview
+#### Panel Principal
+- Ver balance actual y resumen mensual
+- Acceso rápido a todas las características principales
+- Vista general de transacciones recientes
+- Vista previa de gastos mensuales
 
-#### Transaction Management
-- Add new income/expense transactions
-- Categorize transactions automatically
-- Edit or delete existing transactions
-- Search and filter transactions
+#### Gestión de Transacciones
+- Agregar nuevas transacciones de ingresos/gastos
+- Categorizar transacciones automáticamente
+- Editar o eliminar transacciones existentes
+- Buscar y filtrar transacciones
 
-#### Reports & Analytics
-- Visual charts for expense breakdown
-- Income vs expense trends
-- Category-wise spending analysis
-- Export reports in various formats
+#### Informes y Análisis
+- Gráficos visuales para desglose de gastos
+- Tendencias de ingresos vs gastos
+- Análisis de gastos por categoría
+- Exportar informes en varios formatos
 
-#### Settings
-- Configure currency and date formats
-- Manage data backup and export
-- Customize app appearance
-- Privacy and security settings
+#### Configuración
+- Configurar formatos de moneda y fecha
+- Gestionar respaldo y exportación de datos
+- Personalizar apariencia de la app
+- Configuración de privacidad y seguridad
 
-## 🧪 Testing
+### Flujo de Desarrollo
 
-### Test Structure
-
-```
-app/src/
-├── test/                              # Unit tests
-│   └── java/com/example/fintrax/
-│       ├── domain/                    # Domain layer tests
-│       ├── data/                      # Data layer tests
-│       └── presentation/              # Presentation layer tests
-└── androidTest/                       # Instrumented tests
-    └── java/com/example/fintrax/
-        ├── ui/                        # UI tests
-        └── database/                  # Database tests
-```
-
-### Running Tests
-
-```bash
-# Run unit tests
-./gradlew test
-
-# Run instrumented tests
-./gradlew connectedAndroidTest
-
-# Run specific test class
-./gradlew test --tests "com.example.fintrax.domain.usecase.*"
-
-# Generate test coverage report
-./gradlew jacocoTestReport
-```
-
-### Test Coverage
-
-- **Domain Layer**: 90%+ coverage target
-- **Data Layer**: 85%+ coverage target
-- **Presentation Layer**: 70%+ coverage target
-
-## 🤝 Contributing
-
-We welcome contributions from the community! Please follow these guidelines:
-
-### Development Workflow
-
-1. **Fork the repository**
-2. **Create a feature branch**
+1. **Bifurcar el repositorio**
+2. **Crear una rama de característica**
    ```bash
    git checkout -b feature/your-feature-name
    ```
-3. **Make your changes**
-4. **Add tests for new functionality**
-5. **Run all tests**
+3. **Realizar tus cambios**
+4. **Agregar pruebas para nueva funcionalidad**
+5. **Ejecutar todas las pruebas**
    ```bash
    ./gradlew test connectedAndroidTest
    ```
-6. **Commit your changes**
+6. **Confirmar tus cambios**
    ```bash
    git commit -m "feat: add your feature description"
    ```
-7. **Push to your fork**
+7. **Enviar a tu bifurcación**
    ```bash
    git push origin feature/your-feature-name
    ```
-8. **Create a Pull Request**
+8. **Crear un Pull Request**
 
-### Code Style
+<div align="center">
 
-- Follow [Kotlin coding conventions](https://kotlinlang.org/docs/coding-conventions.html)
-- Use [Detekt](https://detekt.dev/) for static analysis
-- Write meaningful commit messages following [Conventional Commits](https://conventionalcommits.org/)
-- Keep pull requests focused and well-documented
+[⭐ Dar estrella a este repo](https://github.com/your-username/fintrax) | [🐛 Reportar problemas](https://github.com/your-username/fintrax/issues) | [💡 Sugerir características](https://github.com/your-username/fintrax/discussions)
+
+</div>
 </div>

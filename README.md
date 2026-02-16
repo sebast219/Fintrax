@@ -22,10 +22,6 @@
 - [Estructura del Proyecto](#-estructura-del-proyecto)
 - [Instalación](#-instalación)
 - [Uso](#-uso)
-- [Pruebas](#-pruebas)
-- [Contribuciones](#-contribuciones)
-- [Licencia](#-licencia)
-- [Roadmap](#-roadmap)
 
 ## 🎯 Acerca del Proyecto
 
